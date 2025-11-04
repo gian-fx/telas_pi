@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 125px);
+}
+
+.email {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.email input {
+    width: 25rem;
+    height: 3rem;
+    border-radius: 50px;
+}
+
+.senha {
+    position: relative;
+}
+
+.senha input {
+    width: 25rem;
+    height: 3rem;
+    border-radius: 50px;
+}
+
+.email label {
+    position: absolute;
+    left: 0;
+    align-self: center;
+    transform: translateX(15px);
+}
+
+.senha label {
+    position: absolute;
+    left: 0;
+    align-self: center;
+    transform: translateX(15px);
+}
