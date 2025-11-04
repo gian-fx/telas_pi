@@ -1,0 +1,14 @@
+Dashboard
+Deve ter um menu funcional para todas as telas abaixo:
+
+Cadastro de usuários:
+Nome, e-mail, CPF, celular, data de nascimento, gênero, endereço completo com todos os estados usando SELECT, senha, confirmar senha, tipo de usuário (Admim, funcionário, cliente)
+Listagem de usuários:
+Colocar 4 campos importantes na tela + botões de opções com editar e excluir.
+
+Cadastro de produtos
+Nome, descrição, quantidade, valor unitário, categoria 
+
+Listagem de produtos:
+Colocar 4 campos importantes na tela + botões de opções com editar e excluir.
+

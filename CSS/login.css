@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    background-color: #FAFAFA;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 125px);
+
 }
 
 .email {
@@ -14,6 +21,10 @@
     width: 25rem;
     height: 3rem;
     border-radius: 50px;
+    background-color: #FAFAFA;
+    border: 1px solid #EDEDED;
+    padding-left: 15px;
+    font-family: "IBM Plex Serif", serif;
 }
 
 .senha {
@@ -24,18 +35,68 @@
     width: 25rem;
     height: 3rem;
     border-radius: 50px;
+    background-color: #FAFAFA;
+    border: 1px solid #EDEDED;
+    font-family: "IBM Plex Serif", serif;
+    padding-left: 15px;
 }
 
-.email label {
-    position: absolute;
-    left: 0;
-    align-self: center;
-    transform: translateX(15px);
+.titulo h1 {
+    margin-bottom: 50px;
+    font-family: "Playfair Display", serif;
+    text-align: center;
 }
 
-.senha label {
-    position: absolute;
-    left: 0;
-    align-self: center;
-    transform: translateX(15px);
+.email input:focus, .senha input:focus {
+    outline: none;
+}
+
+
+.lembrar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 25rem;
+    gap: 10px;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.esqueceu {
+    margin-left: auto;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.esqueceu a {
+    text-decoration: none;
+    color: #322A00;
+}
+
+.signup {
+    margin-top: 20px;
+    font-family: "IBM Plex Serif", serif;
+    text-align: center;
+}
+
+.signup a{
+    text-decoration: none;
+    color: #322A00;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.login {
+    width: 25rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: #B8AF7F;
+    color: #322A00;
+    border: none;
+    cursor: pointer;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1.3rem;
+    transition: 200ms;
+}
+
+.login:hover {
+    background-color: #A69E6D;
+    transform: scale(1.02);
 }
