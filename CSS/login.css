@@ -2,6 +2,7 @@
 
 body {
     background-color: #FAFAFA;
+    overflow-y: scroll;
 }
 
 .container {

@@ -1,0 +1,66 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-y: scroll;
+    background-color: #FAFAFA;
+}
+
+.info {
+    width: 60rem;
+    height: 300px;
+    background-color: #F5EFCA;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nome input {
+    width: 25rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: #FAFAFA;
+    border: 1px solid #EDEDED;
+    padding-left: 15px;
+    font-family: "IBM Plex Serif", serif;
+    color: #524317;
+}
+
+.cpf input {
+    width: 25rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: #FAFAFA;
+    border: 1px solid #EDEDED;
+    padding-left: 15px;
+    font-family: "IBM Plex Serif", serif;
+    color: #524317;
+}
+
+.cel input {
+    width: 25rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: #FAFAFA;
+    border: 1px solid #EDEDED;
+    padding-left: 15px;
+    font-family: "IBM Plex Serif", serif;
+    color: #524317;
+}
+
+.data input[type="date"] {
+    width: 400px;
+    text-align: center;
+}
+
+.nome input:focus, .cpf input:focus, .cel input:focus {
+    outline: none;
+}
+
+.nome input:focus, .cpf input:focus, .cel input:focus {
+    overflow: hidden;
+}
