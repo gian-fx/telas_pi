@@ -2,26 +2,15 @@ Dashboard
 Deve ter um menu funcional para todas as telas abaixo:
 
 
-Cadastro de usuários:
-
-endereço completo com todos os estados usando SELECT
-Rua, Número, Bairro, CEP, Estado, Cidade
-
-Email, senha, confirmar senha, tipo de usuário (Adm, funcionario e cliente)
 
 
 
 
-Listagem de usuários:
-Colocar 4 campos importantes na tela + 
-botões de opções com editar e excluir.
+
+
 
 
 Cadastro de produtos
 Nome, descrição, quantidade, valor unitário, categoria 
 
-
-Listagem de produtos:
-Colocar 4 campos importantes na tela + botões de 
-opções com editar e excluir.
 

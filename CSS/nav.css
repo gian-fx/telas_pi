@@ -45,6 +45,7 @@ nav {
     font-family: "Playfair Display", serif;
     font-size: 2.25em;    
     color: #373030;
+    text-decoration: none;
 }
 
 .dropdown {

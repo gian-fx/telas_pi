@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="/CSS/nav.css">
     <link rel="stylesheet" href="/CSS/cadastrouser.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/cadastro.css">
     <title>Mundo do Queijo</title>
 </head>
 <body>
     <nav>
         <div class="logo">
-            <a href="/index.html"><p>Mundo do Queijo 🧀</p></a>
+            <a href="/index.html" class="text-decoration-none"><p>Mundo do Queijo 🧀</p></a>
         </div>
 
         <!-- <div class="navbar">
@@ -46,153 +49,142 @@
         </div>
     </nav>
 
-    <h1>Cadastro de Usuários</h1>
-    <form action="#">
-        <div class="info">
-            <div class="infotitle">
-                <p>Informações Pessoais</p>
-            </div>
-            <div class="nome">
-                <input type="text" placeholder="Nome" name="nome" id="nome">
-            </div>
+    <main class="container my-5" style="max-width: 720px;">
+        <form>
+            
+            <fieldset class="mb-4">
+                <h1 class="header-title">Mundo do Queijo</h1>
+                <h2>Cadastro de Usuário</h2>
+                <legend>Informações Pessoais</legend>
 
-            <div class="cpf">
-                <input type="number" placeholder="Cpf" name="cpf" id="cpf">
-            </div>
-
-            <div class="cel">
-                <input type="number" placeholder="Celular" name="cel" id="cel">
-            </div>
-
-            <div class="data">
-                <label for="data">Data de Nascimento</label>
-                <input type="date" placeholder="Data de Nascimento" name="data" id="data">
-            </div>
-
-            <div class="genero">
-                <div class="masculino">
-                    <label for="masc">Masculino</label>
-                    <input type="radio" name="gen" value="a">
+                <div class="mb-3">
+                    <label for="nomeCompleto">Nome Completo</label>
+                    <input type="text" class="form-control" id="nomeCompleto" placeholder="Seu nome completo" />
                 </div>
-                <div class="feminino">
-                    <label for="fem">Feminino</label>
-                    <input type="radio" name="gen" value="b">
-                </div>
-                <div class="outro">
-                    <label for="outro">Outro</label>
-                    <input type="radio" name="gen" value="c">
-                </div>
-                <div class="mix">
-                    <label for="mix">Prefiro não dizer</label>
-                    <input type="radio" name="gen" value="d">
-                </div>
-            </div>
-        </div>
-    </form>
 
-    <form action="">
-        <div class="acesso">
-            <div class="infotitle">
-                    <p>Informações de Acesso</p>
-            </div>
-
-            <div class="cadastro">
-                <div class="email">
-                    <input type="text" placeholder="Email" name="email" id="email">
-                </div>
-                <div class="senha">
-                    <input type="password" placeholder="Senha" name="senha" id="senha">
-                </div>
-                <div class="confirmarsenha">
-                    <input type="password" placeholder="Confirmar Senha" name="confirm" id="confirm">
-                </div>
-            </div>
-
-            <div class="usertype">
-
-                <div class="usertypetitle">
-                    <p>Tipo de Usuário</p>
-                </div> 
-
-                <div class="usertypeoptions">
-                    <div class="adm">
-                        <label for="administrador">Administrador</label>
-                        <input type="radio" name="usertype" value="a">
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="cpf" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" />
                     </div>
-
-                    <div class="funcionario">
-                        <label for="funcionario">Funcionário</label>
-                        <input type="radio" name="usertype" value="b">
-                    </div>
-
-                    <div class="cliente">
-                        <label for="cliente">Cliente</label>
-                        <input type="radio" name="usertype" value="c">
+                    <div class="col-md-6">
+                        <label for="dataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" />
                     </div>
                 </div>
 
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="celular" class="form-label">Celular</label>
+                        <input type="tel" class="form-control" id="celular" name="celular" placeholder="(00) 00000-0000" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="genero" class="form-label">Gênero</label>
+                        <select class="form-select" name="genero" id="genero">
+                            <option value="" selected>Escolha uma opção</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="mb-4">
+                <legend><i class="fas fa-lock icon"></i>Informações de Acesso</legend>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" />
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-md-6">
+                        <label for="senha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="********" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="confirmarSenha" class="form-label">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="confirmarSenha" name="confirmarSenha" placeholder="********" />
+                    </div>
+                </div>
+                <div>
+                    <label for="tipoUsuario" class="form-label">Tipo de Usuário</label>
+                    <select class="form-select" id="tipoUsuario" name="tipoUsuario">
+                        <option value="" selected>Escolha uma Opção</option>
+                        <option value="administrador">Administrador</option>
+                        <option value="funcionario">Funcionário</option>
+                        <option value="cliente">Cliente</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><i class="fas fa-map-marker-alt icon"></i>Endereço</legend>
+                <div class="row g-3 mt-2">
+                    <div class="col-md-3">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input type="text" class="form-control" id="cep" name="cep" placeholder="00000-000" />
+                    </div>
+                    <div class="col-md-5">
+                        <label for="rua" class="form-label">Rua</label>
+                        <input type="text" class="form-control" id="rua" name="rua" placeholder="Nome da rua" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="numero" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="numero" name="numero" placeholder="Número" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="complemento" class="form-label">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" name="complemento" placeholder="Apartamento, bloco, etc." />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" name="bairro" placeholder="Bairro" />
+                    </div>
+                    <div class="col-md-8">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" name="cidade" placeholder="Cidade" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="estado" class="form-label">Estado</label>
+                        <select class="form-select" id="estado" name="estado">
+                            <option selected>Selecione...</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="text-center mt-4">
+                <button id="btnfinal" type="submit">Cadastrar</button>
             </div>
-        </div>
-    </form>
+        </form>
+    </main>
 
-    <div class="endereco">
-        <div class="enderecotitle">
-            <p>Informações de Endereço</p>
-        </div>
-
-        <div class="rua">
-            <input type="text" name="rua" id="rua" placeholder="Rua">
-        </div>
-
-        <div class="numero">
-            <input type="number" name="numero" id="numero" placeholder="Número da Casa">
-        </div>
-
-        <div class="bairro">
-            <input type="text" name="bairro" id="bairro" placeholder="Bairro">
-        </div>
-
-        <div class="cep">
-            <input type="number" name="cep" id="cep" placeholder="CEP">
-        </div>
-
-        <div class="estado">
-            <select id="estado" name="estado">
-                <option value="" selected>Selecione seu Estado</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-                <option value="EX">Estrangeiro</option>
-            </select>
-        </div>
-
-        <div class="cidade">
-            <input type="text" name="cidade" id="cidade" placeholder="Cidade">
-        </div>
-    </div>
 </body>
 </html>
