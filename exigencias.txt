@@ -6,8 +6,6 @@ Cadastro de usuários:
 
 endereço completo com todos os estados usando SELECT
 
-Nome, CPf, Celular, Data de Nascimento, Gênero
-
 Email, senha, confirmar senha, tipo de usuário (Adm, funcionario e cliente)
 
 
