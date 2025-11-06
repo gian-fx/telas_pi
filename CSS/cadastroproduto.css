@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-family: "IBM Plex Serif", serif;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-width {
+    flex: 1 1 100%;
+}
+
+label {
+    font-family: "IBM Plex Serif", serif;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input, textarea {
+    font-family: "IBM Plex Serif", serif;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.btn-submit {
+    width: 100%;
+    background: #B8AF7F;
+    color: #322A14;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 100ms;
+    font-family: "IBM Plex Serif", serif;
+}
+
+.btn-submit:hover {
+    background-color: #746c3f;
+    color: #322A14;
+}
+
+@media (max-width: 768px) {
+    .form-group {
+    flex: 1 1 100%;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do Queijo</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/nav.css">
+    <link rel="stylesheet" href="/CSS/cadastroproduto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Mundo do Queijo</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="/index.html"><p>Mundo do Queijo 🧀</p></a>
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <div class="dropdown">
+                    <span>Usuários<i id="chevron" class="bi bi-chevron-down"></i></span>
+                    <div class="dropdowncontent">
+                        <a href="/HTML/cadastro_user.html">Cadastro de usuários</a>
+                        <a href="/HTML/listagem_user.html">Listagem de usuários</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <span>Produtos<i id="chevron" class="bi bi-chevron-down"></i></span>
+                    <div class="dropdowncontent">
+                        <a href="/HTML/cadastro_produto.html">Cadastro de produtos</a>
+                        <a href="/HTML/listagem_produto.html">Listagem de produtos</a>
+                    </div>
+                </div>
+                <div class="btnlogin">
+                    <a href="/HTML/login.html"><button>Login</button></a>
+                </div>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="title">Mundo do Queijo</div>
+            <div class="subtitle">Cadastro de Produtos</div>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome do produto</label>
+                        <input type="text" name="nomeproduto" id="nome" placeholder="Nome do produto">
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria</label>
+                        <input type="text" name="categoria" id="categoria" placeholder="Categoria">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantidade">Quantidade em estoque</label>
+                        <input type="number" name="quantidade" id="quantidade" placeholder="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="preco">Preço</label>
+                        <input type="text" name="preco" id="preco" placeholder="R$ 0,00">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="descricao">Descrição do produto</label>
+                        <textarea id="descricao" name="descricao" placeholder="Descreva o produto"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit" class="btn-submit">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

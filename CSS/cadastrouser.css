@@ -13,11 +13,11 @@ body {
 }
 
 fieldset {
-    border: 2px solid #ccc; 
+    border: 1px solid #ccc; 
     border-radius: 12px;
-    background-color: #F5EFCA; 
+    background-color: #ffffff; 
     padding: 1.5rem 2rem 2rem 2rem;
-    box-shadow: 0 4px 8px rgb(58 58 58 / 0.1);
+    box-shadow: 0 4px 8px rgb(58 58 58 / 0.2);
 }
 
 fieldset h2 {
