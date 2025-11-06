@@ -33,7 +33,6 @@ legend {
     font-weight: 700;
     font-size: 1.1rem;
     color: #322A14;
-    padding: 0 10px;
     width: auto;
 }
 
@@ -86,5 +85,6 @@ label {
     letter-spacing: 2px;
     font-family: "Playfair Display", serif;
 }
+
 
 
