@@ -5,6 +5,7 @@ Deve ter um menu funcional para todas as telas abaixo:
 Cadastro de usuários:
 
 endereço completo com todos os estados usando SELECT
+Rua, Número, Bairro, CEP, Estado, Cidade
 
 Email, senha, confirmar senha, tipo de usuário (Adm, funcionario e cliente)
 
